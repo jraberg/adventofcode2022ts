@@ -7,5 +7,5 @@ const caloriesByDeer = fs.readFileSync(testDataPath, { encoding: 'utf8' }).trim(
                          .map(calories => calories.reduce((acc, calorie) => acc + calorie, 0))
                          .sort((a, b) => b - a);
 
-console.log(caloriesByDeer[0]);
-console.log(caloriesByDeer.slice(0, 3).reduce((acc, calorie) => acc + calorie, 0));
+console.log(`Day 1 - part 1: ${caloriesByDeer[0]}`);
+console.log(`Day 1 - part 2: ${caloriesByDeer.slice(0, 3).reduce((acc, calorie) => acc + calorie, 0)}`);
