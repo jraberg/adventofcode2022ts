@@ -27,5 +27,5 @@ for (let { opponent, you } of strategy) {
   opponent = decodeOpponent(opponent);
   totalScorePart2 += scoreRound(you, decodeOpponent(opponent));
 }
-console.log(`Total score: ${totalScorePart1}`);
-console.log(`Total score: ${totalScorePart2}`);
+console.log(`Part 1 - Total score: ${totalScorePart1}`);
+console.log(`Part 2 - Total score: ${totalScorePart2}`);
