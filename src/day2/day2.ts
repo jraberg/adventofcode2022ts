@@ -2,8 +2,7 @@ import path from 'path';
 import * as fs from 'fs';
 import { decodeOpponent, decodeToLose, decodeToWin, decodeYou } from './helper';
 
-const filepath = path.join(__dirname, 'day2.puzzle.in.txt');
-const strategy = fs.readFileSync(filepath, { encoding: 'utf-8' }).trim().split('\n')
+const strategy = fs.readFileSync(path.join(__dirname, 'day2.puzzle.in.txt'), { encoding: 'utf-8' }).trim().split('\n')
                    .map(l => l.split(' '))
                    .map(([op, you]) => ({ opponent: op, you: you }));
 

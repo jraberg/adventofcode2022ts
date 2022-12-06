@@ -1,8 +1,7 @@
 import * as fs from 'fs';
 import path from 'path';
 
-const filepath = path.join(__dirname, 'day3.puzzle.in.txt');
-const rucksacks = fs.readFileSync(filepath, {encoding: 'utf-8'}).trim().split('\n');
+const rucksacks = fs.readFileSync(path.join(__dirname, 'day3.puzzle.in.txt'), {encoding: 'utf-8'}).trim().split('\n');
 export const priority = (c: string): number => {
     const valueOfa = 'a'.charCodeAt(0);
     const valueOfA = 'A'.charCodeAt(0);

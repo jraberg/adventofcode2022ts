@@ -1,8 +1,7 @@
-import path from "path";
-import * as fs from "fs";
+import path from 'path';
+import * as fs from 'fs';
 
-const filepath = path.join(__dirname, "day4.puzzle.in.txt");
-const assignments = fs.readFileSync(filepath, { encoding: "utf-8" }).trim().split("\n")
+const assignments = fs.readFileSync(path.join(__dirname, "day4.puzzle.in.txt"), { encoding: "utf-8" }).trim().split("\n")
                       .map((l) => l.split(","))
                       .map(([a, b]) => [a.split("-").map(Number), b.split("-").map(Number)]);
 
